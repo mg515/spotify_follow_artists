@@ -41,7 +41,7 @@ artists_list.each do |artist_search|
 	
 	# call the api to follow the artist by id
 	puts "working on #{artist.name}"
-	puts `curl -X PUT "https://api.spotify.com/v1/me/following?type=artist&ids=#{artist.id}" -H "Accept: application/json" -H "Authorization: Bearer BQBJz250bTP67vzz0LUbEDZGZu6kZlfb7uSiBBfbSOfId6vSOH6es0cE46PJqXQ7OUqTCfYu3xd8Bi4UZIms-KhSr_GfEz0D9Gb9xwNZ0WvJpkIuXohx-AKgpmgXPJ4f9WtkFqiEkllombOPhRncQd-b0Iq5hX6KXyJc4gqlJNsntLdXdN8ns8ZwbU5Aq5Ae9XsCqxPx8eUrZnsst0jyf8dmWyBiOUYDAZRf5UQdrFrliQ"`
+	puts `curl -X PUT "https://api.spotify.com/v1/me/following?type=artist&ids=#{artist.id}" -H "Accept: application/json" -H "Authorization: Bearer AUTHTOKEN"` #don't forget to input the token here
 	
 end
 
